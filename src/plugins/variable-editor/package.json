@@ -1,0 +1,25 @@
+{
+  "name": "variable-editor",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "variable-editor",
+    "description": "Description of Variable Editor plugin",
+    "kind": "plugin",
+    "displayName": "Variable Editor"
+  },
+  "dependencies": {},
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "maintainers": [
+    {
+      "name": "A Strapi developer"
+    }
+  ],
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

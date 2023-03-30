@@ -4,7 +4,8 @@
   "info": {
     "singularName": "campaign",
     "pluralName": "campaigns",
-    "displayName": "campaign"
+    "displayName": "campaign",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,40 @@
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
       "inversedBy": "campaigns"
+    },
+    "number_connections": {
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
+    },
+    "number_followers": {
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "added",
+        "clicked"
+      ],
+      "default": "added"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "campaigns"
+    },
+    "variables": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::variable.variable",
+      "mappedBy": "campaign"
+    },
+    "video": {
+      "type": "customField",
+      "customField": "plugin::oembed.oembed"
     }
   }
 }

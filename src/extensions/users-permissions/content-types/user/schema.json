@@ -67,7 +67,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::campaign.campaign",
-      "inversedBy": "users"
+      "mappedBy": "users"
     }
   }
 }

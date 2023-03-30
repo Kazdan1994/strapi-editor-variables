@@ -11,11 +11,13 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.3.9",
-    "@strapi/plugin-users-permissions": "4.3.9",
-    "@strapi/strapi": "4.3.9",
-    "better-sqlite3": "7.6.2",
-    "strapi-plugin-email-designer": "^2.1.1"
+    "@exfabrica/strapi-plugin-awesome-help": "^1.0.8",
+    "@strapi/plugin-i18n": "4.9.0",
+    "@strapi/plugin-users-permissions": "4.9.0",
+    "@strapi/strapi": "4.9.0",
+    "better-sqlite3": "8.2.0",
+    "strapi-plugin-email-designer": "^2.1.2",
+    "strapi-plugin-oembed": "^1.0.1"
   },
   "author": {
     "name": "A Strapi developer"
